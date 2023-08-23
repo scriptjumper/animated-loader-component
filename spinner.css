@@ -1,0 +1,28 @@
+/* Just centreing all the content in the body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  animation: Spinner 2000ms infinite;
+}
+
+@keyframes Spinner {
+  0%,
+  100% {
+    border-radius: 50%;
+    transform: rotate(0deg);
+    background-color: #a50c0e;
+  }
+  50% {
+    border-radius: 0%;
+    transform: rotate(180deg);
+    background-color: #180bd6;
+  }
+}
